@@ -12,7 +12,7 @@ export default function HeroSection() {
                 {/* riga */}
                 <div className="row">
                     {/* colonna sinistra */}
-                    <div className="col-12 col-md-7 py-4">
+                    <div className="col-12 col-md-8 py-4">
                         {/* riga foto profilo (only mobile) & titolo*/}
                         <div className="row align-items-center">
                             {/* colonna sinistra con foto profilo*/}
@@ -24,9 +24,9 @@ export default function HeroSection() {
                             </div>
                             {/* colonna destra con titolo */}
                             <div className="col-7 col-md-12">
-                                <h1>
+                                <h2>
                                     Catch phrase
-                                </h1>
+                                </h2>
                             </div>
                         </div>
 
@@ -79,13 +79,18 @@ export default function HeroSection() {
 
                     </div>
                     {/* colonna destra */}
-                    <div className={`d-sm-none d-md-block col-5 ${style.profile}`}>
+                    <div className={`d-sm-none d-md-block col-4 ${style.profile}`}>
                         {/* foto profilo */}
                         <div className={style.profile_box_image}>
                             <img src="./public/foto_mockup.png" alt="" />
                         </div>
                     </div>
                 </div>
+            </div>
+
+            {/* banner next section */}
+            <div className={style.banner_section}>
+                <h1 className={style.banner_title}>EXPERTIES.</h1>
             </div>
 
         </section >
