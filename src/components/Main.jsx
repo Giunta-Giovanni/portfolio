@@ -7,16 +7,14 @@ import ServiceSection from "./main_component/ServiceSection";
 export default function Main() {
     return (
         <main>
-            <div className="container">
-                {/* hero */}
-                <HeroSection />
-                {/* experties */}
-                <ExpertiesSection />
-                {/* Portfolio */}
-                <PortfolioSection />
-                {/* service */}
-                <ServiceSection />
-            </div>
+            {/* hero */}
+            <HeroSection />
+            {/* experties */}
+            <ExpertiesSection />
+            {/* Portfolio */}
+            <PortfolioSection />
+            {/* service */}
+            <ServiceSection />
         </main>
     )
 }

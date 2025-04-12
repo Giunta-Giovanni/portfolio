@@ -1,19 +1,93 @@
+// import fontAwesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faLinkedin, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
+
+// import style
 import style from "../Main.module.css";
+
 export default function HeroSection() {
     return (
         <section className={style.heroSection}>
-            {/* riga */}
-            <div className="row">
-                {/* colonna sinistra */}
-                <div className="col-7" style={{ backgroundColor: 'red' }}>
-                    <h1>CATCH PHRASE</h1>
-                    <h5>Titolo Presentazione</h5>
+            <div className="container">
+                {/* riga */}
+                <div className="row">
+                    {/* colonna sinistra */}
+                    <div className="col-12 col-md-7 py-4">
+                        {/* riga foto profilo (only mobile) & titolo*/}
+                        <div className="row align-items-center">
+                            {/* colonna sinistra con foto profilo*/}
+                            <div className={`col-5 d-md-none`}>
+                                {/* box foto */}
+                                <div className={style.profile_circle}>
+                                    <img src="./public/foto_circle.png" alt="" />
+                                </div>
+                            </div>
+                            {/* colonna destra con titolo */}
+                            <div className="col-7 col-md-12">
+                                <h1>
+                                    Catch phrase
+                                </h1>
+                            </div>
+                        </div>
 
-                </div>
-                {/* colonna destra */}
-                <div className="col-5" style={{ backgroundColor: 'blue' }}>
+                        {/* box presentazione */}
+                        <div className={style.box_presentation}>
+                            <h5>Titolo Presentazione</h5>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex laudantium illum dignissimos eos accusamus quas! Neque, voluptate! Nobis magni aspernatur, impedit fugit, totam beatae illum sequi perferendis reiciendis minima officiis?
+                            </p>
+                            {/* riga per box */}
+                            <div className={`row ${style.channel_box}`}>
+                                <div className="col">
+                                    <div className={style.channel}>
+                                        <a href="">
+                                            <FontAwesomeIcon icon={faLinkedin} />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="col">
+                                    <div className={style.channel}>
+                                        <a href="">
+                                            <FontAwesomeIcon icon={faLinkedin} />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="col">
+                                    <div className={style.channel}>
+                                        <a href="">
+                                            <FontAwesomeIcon icon={faLinkedin} />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="col">
+                                    <div className={style.channel}>
+                                        <a href="">
+                                            <FontAwesomeIcon icon={faLinkedin} />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="col">
+                                    <div className={style.channel}>
+                                        <a href="">
+                                            <FontAwesomeIcon icon={faLinkedin} />
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    {/* colonna destra */}
+                    <div className={`d-sm-none d-md-block col-5 ${style.profile}`}>
+                        {/* foto profilo */}
+                        <div className={style.profile_box_image}>
+                            <img src="./public/foto_mockup.png" alt="" />
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+
+        </section >
     )
 }
