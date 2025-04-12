@@ -13,10 +13,8 @@
 	•	Imposta stile B&W coerente con il mockup PDF
 
 # Milestone 3 – Sezioni principali
-	•	Sezione Catch Phrase con titolo in evidenza
-	•	Sezione Presentazione con testo introduttivo
-	•	Sezione Titolo progetto con descrizione
-	•	Due sezioni di Formazione
+	•	Sezione Catch Phrase con titolo in evidenza√
+	•	Sezione Presentazione con testo introduttivo√
 	•	Sezione Expertise (potrebbe essere un elenco o griglia con competenze)
 	•	Sezione Portfolio (galleria o cards progetto)
 	•	Sezione Servizi divisa in PRIMO / SECONDO / TERZO (ripetizione verticale?)
