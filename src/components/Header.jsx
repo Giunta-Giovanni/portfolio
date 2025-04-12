@@ -29,12 +29,13 @@ export default function Header() {
 
                     {/* navBar */}
                     <nav className="d-none d-md-block">
-                        <ul className="row">
+                        <ul className="row p-0">
                             {navLink.map(link => {
                                 return (
-                                    <li className="col">{link}</li>
+                                    <li className="col">
+                                        <a href="">{link}</a>
+                                    </li>
                                 )
-
                             })}
 
                         </ul>
