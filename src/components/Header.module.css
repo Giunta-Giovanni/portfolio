@@ -9,8 +9,6 @@ li a {
 
 .header {
     /* box */
-    margin: 0 auto;
-    padding: 1rem;
     background-color: #d9d9d9;
     border-radius: 0 0 1rem 1rem;
 
@@ -18,4 +16,8 @@ li a {
     text-align: center;
     font-weight: bold;
     font-size: 1.3rem;
+}
+
+.nav_container {
+    padding: 1rem 0;
 }
