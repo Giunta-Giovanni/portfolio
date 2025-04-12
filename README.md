@@ -2,13 +2,13 @@
 
 # Milestone 1 – Setup progetto
 	•	Inizializza il progetto con Vite o Create React App √
-	•	Installa bootsrap
-	•	Crea la struttura delle cartelle (components, pages, assets, data)
-	•	Configura il routing con React Router (se usi più pagine o hash routing)
+	•	Installa bootsrap√
+	•	Crea la struttura delle cartelle (components, pages, assets, data)√
+	•	Configura il routing con React Router (se usi più pagine o hash routing)√
 
 # Milestone 2 – UI Layout e Navigazione
-	•	Crea il layout base (Header, Main, Footer)
-	•	Implementa la navbar con ancora o routing per: HOME, PORTFOLIO, EXPERTISE, SERVIZI
+	•	Crea il layout base (Header, Main, Footer)√
+	•	Implementa la navbar con ancora o routing per: HOME, PORTFOLIO, EXPERTISE, SERVIZI√
 	•	Aggiungi scroll-to-section o smooth scroll (se single page)
 	•	Imposta stile B&W coerente con il mockup PDF
 
