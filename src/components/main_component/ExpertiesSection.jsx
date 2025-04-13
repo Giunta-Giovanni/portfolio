@@ -27,7 +27,7 @@ export default function ExpertiesSection() {
 
                 {/* riga con formazioni*/}
                 <div className={style.container_training}>
-                    <div className="row">
+                    <div className="row py-4">
                         {/* colonna con cerchio */}
                         <div className="col-3 col-md-2">
                             <div className={style.circle}></div>
@@ -40,7 +40,7 @@ export default function ExpertiesSection() {
                             </div>
                         </div>
                     </div>
-                    <div className="row py-2">
+                    <div className="row py-4">
                         {/* colonna con cerchio */}
                         <div className="col-3 col-md-2">
                             <div className={style.circle}></div>
@@ -53,7 +53,7 @@ export default function ExpertiesSection() {
                             </div>
                         </div>
                     </div>
-                    <div className="row py-2">
+                    <div className="row py-4">
                         {/* colonna con cerchio */}
                         <div className="col-3 col-md-2">
                             <div className={style.circle}></div>
@@ -66,7 +66,7 @@ export default function ExpertiesSection() {
                             </div>
                         </div>
                     </div>
-                    <div className="row py-2">
+                    <div className="row py-4">
                         {/* colonna con cerchio */}
                         <div className="col-3 col-md-2">
                             <div className={style.circle}></div>

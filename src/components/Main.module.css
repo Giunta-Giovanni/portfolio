@@ -87,9 +87,7 @@
     margin: 0.5rem;
 }
 
-.container_training {
-    padding: 3rem 0;
-}
+.container_training {}
 
 .circle {
     width: 70px;

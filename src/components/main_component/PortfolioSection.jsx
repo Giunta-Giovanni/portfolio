@@ -2,7 +2,10 @@ import style from "../Main.module.css";
 export default function PortfolioSection() {
     return (
         <section>
-            questa è la PortfolioSection
+            {/* banner next section */}
+            <div className={style.banner_section}>
+                <h1 className={style.banner_title}>EXPERTIES.</h1>
+            </div>
         </section>
     )
 }
