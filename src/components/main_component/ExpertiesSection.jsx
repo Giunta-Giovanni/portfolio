@@ -26,16 +26,57 @@ export default function ExpertiesSection() {
                 </div>
 
                 {/* riga con formazioni*/}
-                <div className="row py-5">
-                    {/* colonna con cerchio */}
-                    <div className="col-1 ">
-                        <div className={style.circle}></div>
+                <div className={style.container_training}>
+                    <div className="row">
+                        {/* colonna con cerchio */}
+                        <div className="col-3 col-md-2">
+                            <div className={style.circle}></div>
+                        </div>
+                        {/* colonna con formazione */}
+                        <div className="col-9 col-md-10">
+                            <div className={style.box_training}>
+                                <h6>Titolo Formazione</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque consectetur quos molestiae assumenda error non beatae corporis illo saepe accusantium at vel inventore, ex harum impedit facilis qui explicabo nisi!</p>
+                            </div>
+                        </div>
                     </div>
-                    {/* colonna con formazione */}
-                    <div className="col-11">
-                        <div className={style.box_training}>
-                            <h6>Titolo Formazione</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque consectetur quos molestiae assumenda error non beatae corporis illo saepe accusantium at vel inventore, ex harum impedit facilis qui explicabo nisi!</p>
+                    <div className="row py-2">
+                        {/* colonna con cerchio */}
+                        <div className="col-3 col-md-2">
+                            <div className={style.circle}></div>
+                        </div>
+                        {/* colonna con formazione */}
+                        <div className="col-9 col-md-10">
+                            <div className={style.box_training}>
+                                <h6>Titolo Formazione</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque consectetur quos molestiae assumenda error non beatae corporis illo saepe accusantium at vel inventore, ex harum impedit facilis qui explicabo nisi!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row py-2">
+                        {/* colonna con cerchio */}
+                        <div className="col-3 col-md-2">
+                            <div className={style.circle}></div>
+                        </div>
+                        {/* colonna con formazione */}
+                        <div className="col-9 col-md-10">
+                            <div className={style.box_training}>
+                                <h6>Titolo Formazione</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque consectetur quos molestiae assumenda error non beatae corporis illo saepe accusantium at vel inventore, ex harum impedit facilis qui explicabo nisi!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row py-2">
+                        {/* colonna con cerchio */}
+                        <div className="col-3 col-md-2">
+                            <div className={style.circle}></div>
+                        </div>
+                        {/* colonna con formazione */}
+                        <div className="col-9 col-md-10">
+                            <div className={style.box_training}>
+                                <h6>Titolo Formazione</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque consectetur quos molestiae assumenda error non beatae corporis illo saepe accusantium at vel inventore, ex harum impedit facilis qui explicabo nisi!</p>
+                            </div>
                         </div>
                     </div>
                 </div>

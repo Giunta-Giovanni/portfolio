@@ -87,6 +87,10 @@
     margin: 0.5rem;
 }
 
+.container_training {
+    padding: 3rem 0;
+}
+
 .circle {
     width: 70px;
     height: 70px;
@@ -95,9 +99,8 @@
 
     /* debug */
     background-color: red;
-
-
 }
+
 
 /*------------------------------RESPONSIVE------------------------------*/
 
@@ -154,4 +157,5 @@
         flex-direction: column;
         gap: 1rem;
     }
+
 }
