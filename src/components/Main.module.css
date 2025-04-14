@@ -74,6 +74,10 @@
     padding: 3rem;
 }
 
+.experties_row {
+    justify-content: center;
+}
+
 .expertise_box {
     /* debug */
     width: 250px;
