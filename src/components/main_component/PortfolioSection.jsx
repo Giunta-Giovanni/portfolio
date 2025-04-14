@@ -1,11 +1,57 @@
+import { useState } from "react";
+import AccordionItem from "./Accordion/Accordion";
+// importiamo lo stile
 import style from "../Main.module.css";
+
+
 export default function PortfolioSection() {
+
+    const [currentlyActive, setCurrentlyActive] = useState(2)
+
+    const handleAccordionClick = (newActiveAccordion) => {
+        setCurrentlyActive(newActiveAccordion === currentlyActive ? null : newActiveAccordion)
+    };
+
+
     return (
         <section>
             {/* banner next section */}
             <div className={style.banner_section}>
-                <h1 className={style.banner_title}>EXPERTIES.</h1>
+                <h1 className={`${style.banner_title} text-end`}>PORTFOLIO.</h1>
             </div>
-        </section>
+
+            {/* external container */}
+            <div className="container">
+                {/* project card box  */}
+                <div className={style.project_card_box}>
+                    {/* project card */}
+                    <div className={style.project_card}>
+                        {/* box image */}
+                        <div className={style.project_card_image}>
+                            <img src="./public/team_work.png"></img>
+                        </div>
+                        {/* accordion*/}
+                        {/* io ho un pulsante con stato iniziale false */}
+                        {/* <button onClick={showAccordion}>v</button>
+                        <div className={accordion ? '' : 'd-none'}> questo è il testo da mostrare</div> */}
+                        {/* al click del pulsante il suo stato cambia in true */}
+                        {/* se lo stato è true mostro il testo in display block */}
+                        {/* se lo stato è folse display none */}
+                        <AccordionItem
+                            isActive={currentlyActive === 1}
+                            onClick={() => handleAccordionClick(1)}
+                        />
+                        <AccordionItem
+                            isActive={currentlyActive === 2}
+                            onClick={() => handleAccordionClick(2)}
+                        />
+                        <AccordionItem
+                            isActive={currentlyActive === 3}
+                            onClick={() => handleAccordionClick(3)}
+                        />
+                    </div>
+                </div>
+            </div>
+        </section >
     )
 }
