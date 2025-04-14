@@ -8,12 +8,13 @@ export default function ProjectCard({ item, currentlyActive, handleAccordionClic
         <div className={style.project_card}>
             {/* box image */}
             <div className={style.project_card_image}>
-                <img src="./public/team_work.png"></img>
+                <img src={item.image}></img>
             </div>
             <AccordionItem
                 isActive={currentlyActive === item.id}
                 onClick={() => handleAccordionClick(item.id)}
                 handleAccordionClick={handleAccordionClick}
+                item={item}
             />
         </div>
     )

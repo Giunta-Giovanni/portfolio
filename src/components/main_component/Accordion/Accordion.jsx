@@ -1,5 +1,5 @@
 import style from "./accordion.module.css";
-export default function AccordionItem({ isActive, onClick, }) {
+export default function AccordionItem({ isActive, onClick, item }) {
     return (
 
         // Accordion Item
@@ -18,7 +18,7 @@ export default function AccordionItem({ isActive, onClick, }) {
 
                 </div>
                 <div className="col-8 p-0 ">
-                    <h1 className={style.tile}>Introduction to React JS</h1>
+                    <h1 className={style.tile}>{item.tile}</h1>
                 </div>
 
                 <div className="col-3 d-flex justify-content-end align-items-center">
@@ -32,10 +32,10 @@ export default function AccordionItem({ isActive, onClick, }) {
 
                 <div className={`${style.content}  ${isActive ? style.active : ''}`}>
                     <h2>
-                        Titolo intestazione
+                        {item.title}
                     </h2>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro veritatis aperiam ipsam repellendus eos sint incidunt voluptatibus sequi nisi, a laboriosam, sit ratione officia consequatur corporis tenetur corrupti delectus aliquid.
+                        {item.abstract}
                     </p>
 
                 </div>

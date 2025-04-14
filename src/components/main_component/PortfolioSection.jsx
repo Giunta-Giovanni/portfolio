@@ -6,41 +6,40 @@ import style from "../Main.module.css";
 const portfolioData = [
     {
         id: 1,
-        immagine: "/public/monoscocca_carbonio.png",
-        tile: "Monoscocca",
-        titolo: "Progettazione Monoscocca in Carbonio",
-        descrizione: "Studio e realizzazione CAD/CAE di una monoscocca in fibra di carbonio per veicolo da competizione, con analisi FEM per verificare la resistenza strutturale."
+        immagine: "/public/telaio_bicicletta.png",
+        tile: "Telaio",
+        title: "Design Telaio in Carbonio",
+        abstract: "Progettazione CAD/CAE di un telaio per bici da corsa, ottimizzato per leggerezza e resistenza con analisi strutturale e test virtuali."
     },
     {
         id: 2,
-        immagine: "/public/simulazione_flussi.png",
-        tile: "Aerodinamica",
-        titolo: "CFD per Ottimizzazione Aerodinamica",
-        descrizione: "Simulazione fluidodinamica di un prototipo racing con l'obiettivo di ridurre la resistenza aerodinamica e migliorare il carico. Analisi eseguita su superfici in carbonio."
+        immagine: "/public/scocca_auto.png",
+        tile: "Carrozzeria",
+        title: "Studio di Carrozzeria Aerodinamica",
+        abstract: "Sviluppo di una carrozzeria in materiali compositi con simulazioni CFD per migliorare le performance di un'auto da corsa."
     },
     {
         id: 3,
-        immagine: "/public/lavorazione_carbonio.png",
-        tile: "Laminazione",
-        titolo: "Produzione Manuale in Laminazione",
-        descrizione: "Realizzazione manuale di componenti strutturali in fibra di carbonio con tecnica wet layup e post-curing in autoclave. Controllo qualità e rifinitura inclusi."
+        immagine: "/public/ala_posteriore.png",
+        tile: "Ala",
+        title: "Ottimizzazione Ala Posteriore",
+        abstract: "Analisi fluidodinamica e strutturale di un'ala posteriore da competizione per aumentare il carico aerodinamico e la stabilità."
     },
     {
         id: 4,
-        immagine: "/public/lavorazione_carbonio.png",
-        tile: "Laminazione",
-        titolo: "Produzione Manuale in Laminazione",
-        descrizione: "Realizzazione manuale di componenti strutturali in fibra di carbonio con tecnica wet layup e post-curing in autoclave. Controllo qualità e rifinitura inclusi."
+        immagine: "/public/volante_carbonio.png",
+        tile: "Volante",
+        title: "Progettazione Volante in Carbonio",
+        abstract: "Realizzazione di un volante racing ergonomico e leggero, con analisi FEM per garantire sicurezza e rigidità."
     },
     {
         id: 5,
-        immagine: "/public/lavorazione_carbonio.png",
-        tile: "Laminazione",
-        titolo: "Produzione Manuale in Laminazione",
-        descrizione: "Realizzazione manuale di componenti strutturali in fibra di carbonio con tecnica wet layup e post-curing in autoclave. Controllo qualità e rifinitura inclusi."
+        immagine: "/public/sedile_racing.png",
+        tile: "Sedile",
+        title: "Sedile Racing in Fibra",
+        abstract: "Sviluppo e produzione artigianale di un sedile racing in fibra di carbonio con comfort, sicurezza e performance."
     }
-
-]
+];
 
 export default function PortfolioSection() {
 
