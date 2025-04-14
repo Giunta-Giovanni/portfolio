@@ -4,7 +4,7 @@ export default function ExpertiesSection() {
         <section className={style.experties_section}>
             <div className="container">
                 {/* riga dei box experienze */}
-                <div className={`row ${style.experties_row}`}>
+                <div className={`row flex-nowrap ${style.experties_row}`}>
                     {/* colonna */}
                     <div className="col">
                         <div className={style.expertise_box}>
@@ -81,6 +81,6 @@ export default function ExpertiesSection() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
