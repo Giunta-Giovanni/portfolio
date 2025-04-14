@@ -30,21 +30,26 @@ export default function PortfolioSection() {
                         <div className={style.project_card_image}>
                             <img src="./public/team_work.png"></img>
                         </div>
-                        {/* accordion*/}
-                        {/* io ho un pulsante con stato iniziale false */}
-                        {/* <button onClick={showAccordion}>v</button>
-                        <div className={accordion ? '' : 'd-none'}> questo è il testo da mostrare</div> */}
-                        {/* al click del pulsante il suo stato cambia in true */}
-                        {/* se lo stato è true mostro il testo in display block */}
-                        {/* se lo stato è folse display none */}
                         <AccordionItem
                             isActive={currentlyActive === 1}
                             onClick={() => handleAccordionClick(1)}
                         />
+                    </div>
+                    <div className={style.project_card}>
+                        {/* box image */}
+                        <div className={style.project_card_image}>
+                            <img src="./public/team_work.png"></img>
+                        </div>
                         <AccordionItem
                             isActive={currentlyActive === 2}
                             onClick={() => handleAccordionClick(2)}
                         />
+                    </div>
+                    <div className={style.project_card}>
+                        {/* box image */}
+                        <div className={style.project_card_image}>
+                            <img src="./public/team_work.png"></img>
+                        </div>
                         <AccordionItem
                             isActive={currentlyActive === 3}
                             onClick={() => handleAccordionClick(3)}

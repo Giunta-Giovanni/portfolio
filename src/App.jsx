@@ -1,13 +1,10 @@
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
-
+import LandingPage from "./pages/LandingPage"
+import AccordionItem from "./components/main_component/Accordion/Accordion"
 export default function App() {
   return (
     <>
-      <Header />
-      <Main />
-      <Footer />
+      <LandingPage />
+      {/* <AccordionItem /> */}
 
     </>
   )
