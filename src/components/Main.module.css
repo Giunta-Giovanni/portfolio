@@ -3,7 +3,7 @@
     /* debug */
     /* height: 120px; */
     background-color: #d9d9d9;
-    border-radius: 0 0 1rem 1rem;
+    /* border-radius: 0 0 1rem 1rem; */
 
 
 }
@@ -24,6 +24,12 @@
     overflow-y: hidden;
 }
 
+.catch_phrase {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
 .box_presentation {
     padding: 1rem;
 }
@@ -38,11 +44,20 @@
     align-items: center;
     font-size: 3rem;
 
+
     /* debug */
     /* width: 80px;
     height: 80px; */
     /* background-color: grey;
     border-radius: 1rem; */
+}
+
+.channel a {
+    transition: color 0.3s ease;
+}
+
+.channel:hover a {
+    color: #000000c0;
 }
 
 .profile {
@@ -79,7 +94,9 @@
 }
 
 
-.container_training {}
+.container_training {
+    margin: 3rem 0;
+}
 
 .circle {
     width: 70px;
