@@ -78,18 +78,6 @@
     justify-content: center;
 }
 
-.expertise_box {
-    /* debug */
-    width: 250px;
-    height: 250px;
-    background-color: green;
-    margin: 0 auto;
-}
-
-.expertise_title {
-    text-align: center;
-    margin: 0.5rem;
-}
 
 .container_training {}
 
@@ -118,8 +106,8 @@
 .project_card_image {
     /* debug */
     width: 100%;
-    height: 300px;
-    background-color: #d9d9d9;
+    height: 400px;
+    /* background-color: #d9d9d9; */
 }
 
 .project_card_image img {
@@ -131,6 +119,7 @@
     /* debug */
     /* height: 500px; */
     background-color: #d9d9d9;
+    border: 1px solid black;
 }
 
 
@@ -192,4 +181,15 @@
         gap: 1rem;
     }
 
+    .circle {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 320px) {
+    .circle {
+        width: 45px;
+        height: 45px;
+    }
 }
