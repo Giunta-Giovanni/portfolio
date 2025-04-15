@@ -2,7 +2,7 @@ const expertiesData = [
     {
         id: 1,
         image: "/formazione_1.png",
-        title: "accademy of science",
+        title: "Accademy Of Science",
         abstract: "Completed a comprehensive education in various scientific disciplines, fostering a deep understanding of theoretical and applied science."
 
     },

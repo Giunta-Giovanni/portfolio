@@ -2,7 +2,7 @@ import style from "../Main.module.css";
 
 export default function ExpertiseCard({ item }) {
     return (
-        <div className="row py-4">
+        <div className="row py-5">
             {/* colonna con cerchio */}
             <div className="col-3 col-md-2 p-0 ">
                 <div className={style.circle}></div>
