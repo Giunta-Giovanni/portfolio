@@ -6,10 +6,10 @@
 	•	Crea la struttura delle cartelle (components, pages, assets, data)√
 	•	Configura il routing con React Router (se usi più pagine o hash routing)√
 
-# Milestone 2 – UI Layout e Navigazione
+# Milestone 2 – UI Layout e Navigazione√
 	•	Crea il layout base (Header, Main, Footer)√
 	•	Implementa la navbar con ancora o routing per: HOME, PORTFOLIO, EXPERTISE, SERVIZI√
-	•	Aggiungi scroll-to-section o smooth scroll (se single page)
+	•	Aggiungi scroll-to-section o smooth scroll (se single page)√
 	•	Imposta stile B&W coerente con il mockup PDF √
 
 # Milestone 3 – Sezioni principali √
