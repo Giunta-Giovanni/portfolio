@@ -1,8 +1,5 @@
 .item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
+    margin: 0.5rem;
     border-radius: 15px;
     cursor: pointer;
     transition: 0.25s background-color;
@@ -99,4 +96,10 @@ div.content.active {
     background-color: #d9d9d9;
     margin: 0 0.3rem;
     border-radius: 9999px;
+}
+
+@media (max-width: 320px) {
+    h1.tile {
+        font-size: 1.8rem;
+    }
 }
