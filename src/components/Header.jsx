@@ -1,8 +1,15 @@
 import style from "./Header.module.css";
+import { useContext } from "react";
+import cvContext from "../context/cvContext";
 
-const navLink = ['HOME', 'EXPERTIES', 'PORTFOLIO', 'SERVIZI']
 
 export default function Header() {
+
+    const { navLink, scrollToSection } = useContext(cvContext)
+
+
+
+
     return (
         <>
             <header className={style.header}>
@@ -12,10 +19,21 @@ export default function Header() {
                         {/* navBar-tablet & pc*/}
                         <nav className="d-none d-md-block">
                             <ul className="row p-0 m-0">
-                                {navLink.map((link, index) => {
+                                {navLink.map((item) => {
+                                    console.log(item)
                                     return (
-                                        <li className="col" key={index}>
-                                            <a href="">{link}</a>
+                                        <li
+                                            className="col"
+                                            key={item.id}
+
+                                        >
+                                            <span
+                                                className={style.header_link}
+                                                onClick={() => {
+                                                    scrollToSection(item.ref)
+                                                }}
+                                            >{item.link}
+                                            </span>
                                         </li>
                                     )
                                 })}
@@ -33,10 +51,17 @@ export default function Header() {
                                     </button>
                                     <div className="collapse navbar-collapse w-100 mt-2" id="navbarTogglerDemo02">
                                         <ul className="navbar-nav w-100 text-center mb-2 mb-lg-0 p-0 m-0">
-                                            {navLink.map((link, index) => {
+                                            {navLink.map((item) => {
                                                 return (
-                                                    <li className="nav-item w-100" key={index}>
-                                                        <a className="nav-link active" aria-current="page" href="#">{link}</a>
+                                                    <li className="nav-item w-100" key={item.id}>
+                                                        <span
+                                                            className={style.header_link}
+                                                            onClick={() => {
+                                                                scrollToSection(item.ref)
+                                                            }}
+                                                        >{item.link}
+                                                        </span>
+                                                        {/* <a className="nav-link active" aria-current="page" href="#">{item.link}</a> */}
                                                     </li>
                                                 )
                                             })}

@@ -1,12 +1,13 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import cvContext from "../../context/cvContext";
 import ProjectCard from "./ProjectCard";
 import portfolioData from "../../data/PortfolioData";
 // importiamo lo stile
 import style from "../Main.module.css";
 
 
-
 export default function PortfolioSection() {
+    const { sections } = useContext(cvContext)
 
     const [currentlyActive, setCurrentlyActive] = useState(null)
 
@@ -18,7 +19,7 @@ export default function PortfolioSection() {
     return (
         <section>
             {/* banner next section */}
-            <div className={style.banner_section}>
+            <div ref={sections.portfolio} className={style.banner_section}>
                 <h1 className={`${style.banner_title} text-end`}>PORTFOLIO.</h1>
             </div>
 

@@ -1,15 +1,22 @@
-// import Style
+// import Hooks
+import { useContext } from "react";
+// import Contexts
+import cvContext from "../../context/cvContext";
+// import Styles
 import style from "../Main.module.css";
-
+// import Data
 import serviceData from "../../data/ServiceData";
-
+// import functions
 import { generateFeatureCards } from "../../functions/generateFeatureCards";
+
+
 export default function ServiceSection() {
 
+    const { sections } = useContext(cvContext)
     return (
         <section>
             {/* banner next section */}
-            <div className={style.banner_section}>
+            <div ref={sections.service} className={style.banner_section}>
                 <h1 className={`${style.banner_title}`}>SERVICE.</h1>
             </div>
 

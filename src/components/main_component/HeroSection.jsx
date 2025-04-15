@@ -1,13 +1,17 @@
 // import fontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faLinkedin, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
-
+import { faFacebook, faLinkedin, faTwitter, faInstagram, faWordpress } from "@fortawesome/free-brands-svg-icons";
+import { useContext } from "react";
+import cvContext from "../../context/cvContext";
 // import style
 import style from "../Main.module.css";
 
 export default function HeroSection() {
+
+    const { sections } = useContext(cvContext)
+
     return (
-        <section className={style.heroSection}>
+        <section ref={sections.home} className={style.heroSection}>
             <div className="container">
                 {/* riga */}
                 <div className="row">
@@ -24,7 +28,7 @@ export default function HeroSection() {
                             </div>
                             {/* colonna destra con titolo */}
                             <div className="col-7 col-md-12">
-                                <h2>
+                                <h2 className={style.catch_phrase}>
                                     Catch phrase
                                 </h2>
                             </div>
@@ -48,28 +52,28 @@ export default function HeroSection() {
                                 <div className="col">
                                     <div className={style.channel}>
                                         <a href="">
-                                            <FontAwesomeIcon icon={faLinkedin} />
+                                            <FontAwesomeIcon icon={faInstagram} />
                                         </a>
                                     </div>
                                 </div>
                                 <div className="col">
                                     <div className={style.channel}>
                                         <a href="">
-                                            <FontAwesomeIcon icon={faLinkedin} />
+                                            <FontAwesomeIcon icon={faWordpress} />
                                         </a>
                                     </div>
                                 </div>
                                 <div className="col">
                                     <div className={style.channel}>
                                         <a href="">
-                                            <FontAwesomeIcon icon={faLinkedin} />
+                                            <FontAwesomeIcon icon={faTwitter} />
                                         </a>
                                     </div>
                                 </div>
                                 <div className="col">
                                     <div className={style.channel}>
                                         <a href="">
-                                            <FontAwesomeIcon icon={faLinkedin} />
+                                            <FontAwesomeIcon icon={faFacebook} />
                                         </a>
                                     </div>
                                 </div>
@@ -89,7 +93,7 @@ export default function HeroSection() {
             </div>
 
             {/* banner next section */}
-            <div className={style.banner_section}>
+            <div ref={sections.experties} className={style.banner_section}>
                 <h1 className={style.banner_title}>EXPERTIES.</h1>
             </div>
 
