@@ -98,6 +98,8 @@ div.content.active {
     border-radius: 9999px;
 }
 
+
+/*------------------------------RESPONSIVE------------------------------*/
 @media (max-width: 320px) {
     h1.tile {
         font-size: 1.8rem;
