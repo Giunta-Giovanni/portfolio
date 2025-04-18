@@ -23,7 +23,7 @@ export default function HeroSection() {
                             <div className={`col-5 d-md-none`}>
                                 {/* box foto */}
                                 <div className={style.profile_circle}>
-                                    <img src="./public/foto_circle.png" alt="" />
+                                    <img src="/foto_circle.png" alt="Foto profilo mobile" />
                                 </div>
                             </div>
                             {/* colonna destra con titolo */}
@@ -86,7 +86,7 @@ export default function HeroSection() {
                     <div className={`d-sm-none d-md-block col-4 ${style.profile}`}>
                         {/* foto profilo */}
                         <div className={style.profile_box_image}>
-                            <img src="./public/foto_mockup.png" alt="" />
+                            <img src="/foto_mockup.png" alt="Foto profilo desktop" />
                         </div>
                     </div>
                 </div>
