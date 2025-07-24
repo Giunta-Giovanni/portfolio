@@ -37,10 +37,16 @@ div a {
 
 .single_channel a {
     transition: color 0.3s ease;
+    display: flex;
+    justify-content: center;
 }
 
 .single_channel:hover a {
     color: #000000c0;
+}
+
+.single_channel img {
+    width: 2.8rem;
 }
 
 

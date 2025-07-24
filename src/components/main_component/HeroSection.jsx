@@ -1,8 +1,15 @@
-// import fontAwesome
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faLinkedin, faTwitter, faInstagram, faWordpress } from "@fortawesome/free-brands-svg-icons";
+// import hooks
 import { useContext } from "react";
+
+// import context
 import cvContext from "../../context/cvContext";
+
+// import data
+import linkData from "../../data/linkData";
+
+// import assets
+import luca from '../../assets/img/luca.png';
+
 // import style
 import style from "../Main.module.css";
 
@@ -23,7 +30,7 @@ export default function HeroSection() {
                             <div className={`col-5 d-md-none`}>
                                 {/* box foto */}
                                 <div className={style.profile_circle}>
-                                    <img src="/foto_circle.png" alt="Foto profilo mobile" />
+                                    <img src={luca} alt="Foto profilo mobile" />
                                 </div>
                             </div>
                             {/* colonna destra con titolo */}
@@ -40,44 +47,40 @@ export default function HeroSection() {
                             <p>
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex laudantium illum dignissimos eos accusamus quas! Neque, voluptate! Nobis magni aspernatur, impedit fugit, totam beatae illum sequi perferendis reiciendis minima officiis?
                             </p>
-                            {/* riga per box */}
+                            {/* riga per link */}
                             <div className={`row ${style.channel_box}`}>
+                                {linkData.map(link => {
+                                    return (
+                                        <div key={link.id} className="col">
+                                            <div className={style.channel}>
+                                                <a href={link.link}>
+                                                    <img src={link.image} alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    )
+                                })}
                                 <div className="col">
                                     <div className={style.channel}>
                                         <a href="">
-                                            <FontAwesomeIcon icon={faLinkedin} />
+                                            {/* <img src={linkedin} alt="linkedin" /> */}
                                         </a>
                                     </div>
                                 </div>
                                 <div className="col">
                                     <div className={style.channel}>
                                         <a href="">
-                                            <FontAwesomeIcon icon={faInstagram} />
+                                            {/* <img src={email} alt="email" /> */}
                                         </a>
                                     </div>
                                 </div>
                                 <div className="col">
                                     <div className={style.channel}>
                                         <a href="">
-                                            <FontAwesomeIcon icon={faWordpress} />
+                                            {/* <img src={orcid} alt="orcid" /> */}
                                         </a>
                                     </div>
                                 </div>
-                                <div className="col">
-                                    <div className={style.channel}>
-                                        <a href="">
-                                            <FontAwesomeIcon icon={faTwitter} />
-                                        </a>
-                                    </div>
-                                </div>
-                                <div className="col">
-                                    <div className={style.channel}>
-                                        <a href="">
-                                            <FontAwesomeIcon icon={faFacebook} />
-                                        </a>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
 
@@ -86,7 +89,7 @@ export default function HeroSection() {
                     <div className={`d-sm-none d-md-block col-4 ${style.profile}`}>
                         {/* foto profilo */}
                         <div className={style.profile_box_image}>
-                            <img src="/foto_mockup.png" alt="Foto profilo desktop" />
+                            <img src={luca} alt="Foto profilo desktop" />
                         </div>
                     </div>
                 </div>
