@@ -1,7 +1,7 @@
 // import style
 import style from "../Main.module.css";
 
-export default function ExpertiseCard({ item }) {
+export default function ListCard({ item }) {
     return (
         <div className="row py-3">
             {/* col with logo */}

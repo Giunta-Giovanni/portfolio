@@ -12,14 +12,8 @@ import { generateFeatureCards } from "../../functions/generateFeatureCards";
 
 export default function ServiceSection() {
 
-    const { sections } = useContext(cvContext)
     return (
         <section>
-            {/* banner next section */}
-            <div ref={sections.service} className={style.banner_section}>
-                <h1 className={`${style.banner_title}`}>SERVICE.</h1>
-            </div>
-
             {/* external container */}
             <div className="container py-5">
                 <div className={`row flex-nowrap ${style.experties_row}`}>

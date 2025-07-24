@@ -42,7 +42,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 3rem;
+    /* font-size: 3rem; */
 
 
     /* debug */
@@ -54,6 +54,12 @@
 
 .channel a {
     transition: color 0.3s ease;
+    /* width: 2.5rem; */
+    /* max-height: 1rem; */
+}
+
+.channel img {
+    width: 2.5rem;
 }
 
 .channel:hover a {
@@ -83,11 +89,7 @@
 
 
 
-/*------------------------------EXPERTIES SECTION------------------------------*/
-
-.experties_section {
-    padding: 3rem;
-}
+/*------------------------------LIST SECTION------------------------------*/
 
 .experties_row {
     justify-content: center;
@@ -180,7 +182,7 @@
         position: absolute;
         width: 95%;
         left: 52%;
-        transform: translateX(-50%);
+        transform: translate(-50%, 40%);
         bottom: 0%;
     }
 
@@ -192,7 +194,7 @@
         font-size: 2.2rem;
     }
 
-    /*-----EXPERTIES SECTION-----*/
+    /*-----LIST SECTION-----*/
     .experties_row {
         flex-direction: column;
         gap: 1rem;

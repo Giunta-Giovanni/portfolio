@@ -25,11 +25,6 @@ export default function PortfolioSection() {
 
     return (
         <section>
-            {/* banner next section */}
-            <div ref={sections.portfolio} className={style.banner_section}>
-                <h1 className={`${style.banner_title} text-end`}>PORTFOLIO.</h1>
-            </div>
-
             {/* external container */}
             <div className="container">
                 {/* project card box  */}

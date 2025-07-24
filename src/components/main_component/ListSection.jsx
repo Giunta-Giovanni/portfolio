@@ -1,13 +1,13 @@
 // import Style
 import style from "../Main.module.css";
-// import Data
-import expertiesData from "../../data/ExpertiesData";
-// import Functions
-import { generateFeatureCards } from "../../functions/generateFeatureCards";
-// import Components
-import ExpertiseCard from "./ExpertiseCard";
 
-export default function ExpertiesSection() {
+// import Functions
+import { generateFeatureCards } from "../../functions/generateFeatureCards.jsx";
+
+// import Components
+import ListCard from './ListCard.jsx';
+
+export default function ListSection({ data }) {
 
     return (
         <section className={style.experties_section}>
@@ -16,15 +16,15 @@ export default function ExpertiesSection() {
                 {/* row box */}
                 <div className={`row flex-nowrap ${style.experties_row}`}>
                     {/* feature card */}
-                    {generateFeatureCards(expertiesData)}
+                    {/* {generateFeatureCards(data)} */}
                 </div>
 
                 {/* expertise box*/}
                 <div className={style.container_training}>
                     {/* generate expertise card */}
-                    {expertiesData.map(item => {
+                    {data.map(item => {
                         return (
-                            <ExpertiseCard
+                            <ListCard
                                 key={item.id}
                                 item={item}
                             />
