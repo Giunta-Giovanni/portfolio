@@ -15,7 +15,7 @@ export default function ServiceSection() {
     return (
         <section>
             {/* external container */}
-            <div className="container py-5">
+            <div className="container px-4 py-0 ">
                 <div className={`row flex-nowrap ${style.list_row}`}>
                     {/* Experise Card */}
                     {/* {serviceData.map(item => {

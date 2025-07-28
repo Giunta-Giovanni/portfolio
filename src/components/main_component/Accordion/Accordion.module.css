@@ -15,17 +15,15 @@
     /* background-color: #f2f8fe; */
 }
 
-h1.tile {
-    font-size: 2rem;
-    font-weight: 500;
-    padding-top: 0.5rem;
+h4.tile {
+    margin: 0;
 }
 
 
 div.content {
     max-height: 0;
     overflow: hidden;
-    color: #000;
+    color: var(--primary);
     font-size: 12px;
     font-weight: 300;
     margin: 0;
@@ -37,9 +35,6 @@ div.content.active {
     margin: 1rem 0;
 }
 
-.content h2 {
-    font-size: 1.5rem;
-}
 
 .icon_container {
     content: "";
@@ -53,7 +48,7 @@ div.content.active {
     border-radius: 9999px;
     /* transform: translateX(-3rem) translateY(0.25rem); */
     transition: background-color 0.5s, box-shadow 0.5s;
-    background-color: #d9d9d9;
+    background-color: var(--accent);
     box-shadow: rgba(99, 99, 99, 0.2) 2px 2px 8px 2px;
 }
 
@@ -72,7 +67,7 @@ div.content.active {
 .stroke_one {
     width: 3px;
     height: 16px;
-    background-color: #000;
+    background-color: var(--tertiary);
     transform: rotate(0deg);
     ;
 }
@@ -85,17 +80,44 @@ div.content.active {
 .stroke_two {
     width: 3px;
     height: 16px;
-    background-color: #000;
+    background-color: var(--tertiary);
     transform: rotate(90deg);
 
 }
 
 .project_link_box {
-    width: 30px;
-    height: 30px;
-    background-color: #d9d9d9;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--accent);
     margin: 0 0.3rem;
     border-radius: 9999px;
+}
+
+.project_link_box img {
+    width: 100%;
+    padding: 0.3rem;
+    transition: 0.5s ease-in-out;
+}
+
+
+.project_link_box:hover img {
+    transform: rotatez(5deg);
+    padding: 0.25rem;
+}
+
+.task_link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    color: var(--secondary);
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.task_link:hover {
+    color: var(--accent);
+    font-size: 1rem;
+    padding-right: -0.2rem;
 }
 
 

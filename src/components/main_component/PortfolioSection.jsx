@@ -26,7 +26,7 @@ export default function PortfolioSection() {
     return (
         <section>
             {/* external container */}
-            <div className="container">
+            <div className="container px-4 py-0">
                 {/* project card box  */}
                 <div className={style.project_card_box}>
                     {/* project card */}

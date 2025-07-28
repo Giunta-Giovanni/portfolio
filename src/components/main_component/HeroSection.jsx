@@ -6,9 +6,10 @@ import cvContext from "../../context/cvContext";
 
 // import data
 import linkData from "../../data/linkData";
+import heroData from "../../data/HeroData";
 
 // import assets
-import luca from '../../assets/img/luca.png';
+import generalAssets from "../../assets/general/generalAssets";
 
 // import style
 import style from "../Main.module.css";
@@ -16,6 +17,10 @@ import style from "../Main.module.css";
 export default function HeroSection() {
 
     const { sections } = useContext(cvContext)
+
+    const { profilePic } = generalAssets;
+
+    const { mainTitle, title, abstract } = heroData;
 
     return (
         <section ref={sections.home} className={style.heroSection}>
@@ -30,25 +35,25 @@ export default function HeroSection() {
                             <div className={`col-5 d-md-none`}>
                                 {/* box foto */}
                                 <div className={style.profile_circle}>
-                                    <img src={luca} alt="Foto profilo mobile" />
+                                    <img src={profilePic} alt="Foto profilo mobile" />
                                 </div>
                             </div>
                             {/* colonna destra con titolo */}
                             <div className="col-7 col-md-12">
                                 <h2 className={style.catch_phrase}>
-                                    Catch phrase
+                                    {mainTitle}
                                 </h2>
                             </div>
                         </div>
 
                         {/* box presentazione */}
                         <div className={style.box_presentation}>
-                            <h5>Titolo Presentazione</h5>
+                            <h5>{title}</h5>
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex laudantium illum dignissimos eos accusamus quas! Neque, voluptate! Nobis magni aspernatur, impedit fugit, totam beatae illum sequi perferendis reiciendis minima officiis?
+                                {abstract}
                             </p>
                             {/* riga per link */}
-                            <div className={`row ${style.channel_box}`}>
+                            <div className={`row ${style.channel_box} `}>
                                 {linkData.map(link => {
                                     return (
                                         <div key={link.id} className="col">
@@ -60,27 +65,6 @@ export default function HeroSection() {
                                         </div>
                                     )
                                 })}
-                                <div className="col">
-                                    <div className={style.channel}>
-                                        <a href="">
-                                            {/* <img src={linkedin} alt="linkedin" /> */}
-                                        </a>
-                                    </div>
-                                </div>
-                                <div className="col">
-                                    <div className={style.channel}>
-                                        <a href="">
-                                            {/* <img src={email} alt="email" /> */}
-                                        </a>
-                                    </div>
-                                </div>
-                                <div className="col">
-                                    <div className={style.channel}>
-                                        <a href="">
-                                            {/* <img src={orcid} alt="orcid" /> */}
-                                        </a>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
@@ -89,7 +73,7 @@ export default function HeroSection() {
                     <div className={`d-sm-none d-md-block col-4 ${style.profile}`}>
                         {/* foto profilo */}
                         <div className={style.profile_box_image}>
-                            <img src={luca} alt="Foto profilo desktop" />
+                            <img src={profilePic} alt="Foto profilo desktop" />
                         </div>
                     </div>
                 </div>

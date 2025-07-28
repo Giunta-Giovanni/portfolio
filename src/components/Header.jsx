@@ -46,7 +46,7 @@ export default function Header() {
                             <div className="col-12 p-0">
                                 <nav className="navbar d-md-none">
                                     {/* burgher button */}
-                                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                                    <button className={`navbar-toggler ${style.burger_menu}`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                                         <span className="navbar-toggler-icon"></span>
                                     </button>
                                     <div className="collapse navbar-collapse w-100 mt-2" id="navbarTogglerDemo02">

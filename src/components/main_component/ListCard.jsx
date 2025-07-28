@@ -1,11 +1,17 @@
+
+import generalAssets from "../../assets/general/generalAssets";
+
+const { docDark } = generalAssets;
+
+
 // import style
 import style from "../Main.module.css";
 
 export default function ListCard({ item }) {
     const { id, title, key, role, year, tasks, image, link } = item
-    console.log('questo è tasks', image)
+    // console.log('questo è tasks', image)
 
-
+    // render
     return (
         <div className="row py-3 ">
             {/* col with logo */}
@@ -24,7 +30,13 @@ export default function ListCard({ item }) {
                     <div className={style.box_list_title}>
                         <h5>{title}</h5>
                         {link ?
-                            <button> link</button>
+                            <a
+                                href={link}
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                <img src={docDark} alt="link" />
+                            </a>
                             :
                             null
                         }
@@ -45,21 +57,33 @@ export default function ListCard({ item }) {
                         <div id={`${key}${id}`} className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
                                 {Array.isArray(tasks) ?
-                                    <ul className={style.tasks}>
-                                        {tasks.map(text => {
-                                            return (
-                                                <li key={id}>{text}</li>
-                                            )
+
+                                    <>
+                                        <ul className={style.tasks}>
+                                            {tasks.map((text, index) => {
+                                                return (
+                                                    <li key={index}>{text}</li>
+                                                )
+                                            }
+                                            )}
+
+                                        </ul>
+                                        {link ?
+                                            <a
+                                                className={style.task_link}
+                                                href={link}
+                                                target="_blank"
+                                                rel="noopener noreferrer">
+                                                Read Document
+                                            </a>
+
+                                            :
+                                            null
                                         }
-                                        )}
-                                    </ul>
+                                    </>
                                     :
                                     <p>{item.tasks}</p>
                                 }
-                                {link ?
-                                    <p>{link}</p>
-                                    :
-                                    null}
                             </div>
                         </div>
                     </div>

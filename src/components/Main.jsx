@@ -24,17 +24,21 @@ export default function Main() {
         <main>
             {/* hero */}
             <HeroSection />
+
             {/* expertise */}
             <ListSection data={expertiseData} />
+
             {/* education */}
             <Banner position='end' element={navLink.find(element => element.link === 'EDUCATION')} />
             <ListSection data={educationData} />
+
             {/* Portfolio */}
             <Banner position='' element={navLink.find(element => element.link === 'PORTFOLIO')} />
             <PortfolioSection />
+
             {/* service */}
-            <Banner position='end' element={navLink.find(element => element.link === 'SERVIZI')} />
-            <ServiceSection />
+            {/* <Banner position='end' element={navLink.find(element => element.link === 'SERVIZI')} /> */}
+            {/* <ServiceSection /> */}
         </main>
     )
 }
