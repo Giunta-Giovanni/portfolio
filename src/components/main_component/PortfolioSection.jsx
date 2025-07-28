@@ -31,7 +31,7 @@ export default function PortfolioSection() {
                 <div className={style.project_card_box}>
                     {/* project card */}
                     {portfolioData.map(item => {
-                        console.log(item)
+                        // console.log(item)
                         return (
                             <ProjectCard
                                 key={item.id}

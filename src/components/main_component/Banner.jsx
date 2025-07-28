@@ -1,6 +1,6 @@
 import style from '../Main.module.css';
 export default function Banner({ position, element }) {
-    console.log("questo è l'elemento", element);
+    // console.log("questo è l'elemento", element);
     //render
     return (
         <div ref={element.ref} className={style.banner_section}>
