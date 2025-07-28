@@ -10,11 +10,11 @@ import ListCard from './ListCard.jsx';
 export default function ListSection({ data }) {
 
     return (
-        <section className={style.experties_section}>
+        <section className={style.list_section}>
             {/* external container */}
             <div className="container">
                 {/* row box */}
-                <div className={`row flex-nowrap ${style.experties_row}`}>
+                <div className={`row flex-nowrap ${style.list_row}`}>
                     {/* feature card */}
                     {/* {generateFeatureCards(data)} */}
                 </div>

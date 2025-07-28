@@ -96,8 +96,8 @@ export default function HeroSection() {
             </div>
 
             {/* banner next section */}
-            <div ref={sections.experties} className={style.banner_section}>
-                <h1 className={style.banner_title}>EXPERTIES.</h1>
+            <div ref={sections.experience} className={style.banner_section}>
+                <h1 className={style.banner_title}>EXPERIENCE.</h1>
             </div>
 
         </section >
