@@ -1,5 +1,5 @@
-import { key } from 'fontawesome';
 import educationAssets from '../assets/education/educationAssets';
+import pdf from '../../reference.pdf'
 
 const { luiss, polito } = educationAssets;
 
@@ -33,7 +33,7 @@ const educationData = [
             "Developed a carbon fiber origami crash box for a Formula Student car using FEA simulations (LS- Dyna), incorporating cohesive and shell elements.",
             "Conducted experimental testing to validate models, with comprehensive data post - processing in Matlab"
         ],
-        link: "qualcosa.org"
+        link: pdf
     },
     {
         id: 3,
@@ -43,7 +43,6 @@ const educationData = [
         title: "Bachelor’s Degree in Mechanical Engineering",
         role: "Thesis: \"Numerical Simulation of a Cooling System for a Transonic Blade, Considering Variations in Operational and Geometric Conditions\"",
         tasks: "Analyzed and post-processed CFD data by modifying operational parameters of a cooling channel installed on the LS89 transonic turbine blade, exploring the impact of geometric and flow variations on cooling efficiency.",
-        // link: "qualcosa.org"
     }
 ];
 

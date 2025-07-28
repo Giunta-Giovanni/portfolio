@@ -1,38 +1,38 @@
+import portfolioAssets from "../assets/Portfolio/portfolioAssets";
+
+const { impact, mappa, pianta, sc } = portfolioAssets;
+
+console.log(portfolioAssets);
+
 const portfolioData = [
     {
         id: 1,
-        image: "/team_work.png",
-        tile: "Telaio",
-        title: "Design Telaio in Carbonio",
-        abstract: "Progettazione CAD/CAE di un telaio per bici da corsa, ottimizzato per leggerezza e resistenza con analisi strutturale e test virtuali."
+        image: mappa,
+        tile: "International Experiences",
+        title: "Across all the studing period until now I travel around the world.",
+        abstract: "Germany; Netherland; UK; Croatia. Getting in touch with other culture and share experiences."
     },
     {
         id: 2,
-        image: "/work_alone.png",
-        tile: "Carrozzeria",
-        title: "Studio di Carrozzeria Aerodinamica",
-        abstract: "Sviluppo di una carrozzeria in materiali compositi con simulazioni CFD per migliorare le performance di un'auto da corsa."
+        image: sc,
+        tile: "Squadra Corse working activities",
+        title: "Monocoque Design & Manufacturing",
+        abstract: "Carbon fiber design and hand lamination using Carbon Fiber Rinforcement Plies."
     },
     {
         id: 3,
-        image: "/work_alone.png",
-        tile: "Ala",
-        title: "Ottimizzazione Ala Posteriore",
-        abstract: "Analisi fluidodinamica e strutturale di un'ala posteriore da competizione per aumentare il carico aerodinamico e la stabilità."
+        image: impact,
+        tile: "Origami Crashbox",
+        title: "Design of a Lightweight Origami Composite Crash Box",
+        abstract: "Experimental and Numerical Study on the Absorbed Energy in Frontal Impacts",
+        link: "https://www.mdpi.com/2504-477X/8/6/224"
     },
     {
         id: 4,
-        image: "./team_work.png",
-        tile: "Volante",
-        title: "Progettazione Volante in Carbonio",
-        abstract: "Realizzazione di un volante racing ergonomico e leggero, con analisi FEM per garantire sicurezza e rigidità."
-    },
-    {
-        id: 5,
-        image: "/work_alone.png",
-        tile: "Sedile",
-        title: "Sedile Racing in Fibra",
-        abstract: "Sviluppo e produzione artigianale di un sedile racing in fibra di carbonio con comfort, sicurezza e performance."
+        image: pianta,
+        tile: "Arduino tools and 3D printed part",
+        title: "Automated irrigator system humidity feedback controlled",
+        abstract: "Motion Control Module for generic application"
     }
 ];
 
