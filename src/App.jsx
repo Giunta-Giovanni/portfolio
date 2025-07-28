@@ -1,6 +1,9 @@
 import LandingPage from "./pages/LandingPage"
 import cvContext from "./context/cvContext"
 import { useRef } from "react";
+
+
+import ScrollToTopButton from "./components/scrollToTopButton/ScrollToTopBtn";
 export default function App() {
 
   const sections = {
@@ -16,7 +19,7 @@ export default function App() {
     { id: 2, link: 'EXPERIENCE', ref: sections.experience },
     { id: 3, link: 'EDUCATION', ref: sections.education },
     { id: 4, link: 'PORTFOLIO', ref: sections.portfolio },
-    { id: 5, link: 'SERVIZI', ref: sections.service },
+    // { id: 5, link: 'SERVIZI', ref: sections.service },
   ];
 
   const scrollToSection = (elementRef) => {
@@ -27,6 +30,7 @@ export default function App() {
     <cvContext.Provider value={{ navLink, sections, scrollToSection }}>
       <LandingPage />
       {/* <AccordionItem /> */}
+      <ScrollToTopButton />
     </cvContext.Provider>
 
   )
