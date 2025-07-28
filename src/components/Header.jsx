@@ -20,7 +20,7 @@ export default function Header() {
                         <nav className="d-none d-md-block">
                             <ul className="row p-0 m-0">
                                 {navLink.map((item) => {
-                                    console.log(item)
+                                    // console.log(item)
                                     return (
                                         <li
                                             className="col"

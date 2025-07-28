@@ -9,7 +9,7 @@ import PortfolioSection from "./main_component/PortfolioSection";
 import ServiceSection from "./main_component/ServiceSection";
 
 // import Data
-import expertiesData from "../data/ExpertiesData";
+import expertiseData from "../data/ExpertiseData";
 import educationData from "../data/EducationData";
 import Banner from "./main_component/Banner";
 
@@ -17,15 +17,15 @@ export default function Main() {
 
     const { navLink } = useContext(cvContext);
 
-
+    console.log(expertiseData)
 
     //render
     return (
         <main>
             {/* hero */}
             <HeroSection />
-            {/* experties */}
-            <ListSection data={expertiesData} />
+            {/* expertise */}
+            <ListSection data={expertiseData} />
             {/* education */}
             <Banner position='end' element={navLink.find(element => element.link === 'EDUCATION')} />
             <ListSection data={educationData} />
