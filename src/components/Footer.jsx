@@ -1,7 +1,4 @@
 // import fontAwesome
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faLinkedin, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
-
 import linkData from "../data/linkData";
 
 // import style
@@ -20,7 +17,11 @@ export default function Footer() {
                                 return (
                                     <div key={link.id} className="col">
                                         <div className={style.single_channel}>
-                                            <a href={link.link}>
+                                            <a 
+                                                href={link.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
                                                 <img src={link.image} alt="" />
                                             </a>
                                         </div>
@@ -28,6 +29,9 @@ export default function Footer() {
                                 )
                             })}
                         </div>
+                        <h6 className={style.credits}>
+                            Made by MeG - Siti e Social
+                        </h6>
                     </div>
 
                 </div>

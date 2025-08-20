@@ -267,6 +267,7 @@
     }
 
     .catch_phrase {
+        font-size: 2.6rem;
         padding: 0;
     }
 
@@ -295,7 +296,7 @@
 
     /*-----HERO SECTION-----*/
     .catch_phrase {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     /*-----EXPERTISE SECTION-----*/

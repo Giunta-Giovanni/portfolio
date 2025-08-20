@@ -78,3 +78,9 @@ div a {
         font-size: 2rem;
     }
 }
+
+.credits{
+    margin-top: 5rem;
+    color: #566270;
+    text-align: center;
+}

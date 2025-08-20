@@ -1,7 +1,7 @@
 const heroData = {
-    mainTitle: "Hi, I'm Luca!",
-    title: "Your new favourite superhero",
-    abstract: "Mechanical engineer with hands-on experience in motorsport. Formerly part of the Politecnico di Torino’s racing team, I specialized in designing carbon fiber components and high-performance systems."
+    mainTitle: "Hi, I’m Luca Patruno",
+    title: "I am driven by business, engineering and science.",
+    abstract: "Blending innovation, technical experties and strategic thinking to build impactful project. Discover more about my story and explore what I do."
 }
 
 export default heroData

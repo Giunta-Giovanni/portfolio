@@ -17,9 +17,7 @@ const educationData = [
             "Governance, stakeholder engagement & risk management",
             "Innovation-driven supply chains & sustainability",
             "Leadership labs: public speaking, negotiation, transformational leadership",
-            "International Exposure: The program is enriched by international exchange:",
-            "Luiss Business School Amsterdam - MBA track exposure",
-            "Saïd Business School, University of Oxford - International academic exchange"
+            "International Exposure: Rome, Amsterdam & Oxford Busin Schools",
         ]
     },
     {
@@ -33,7 +31,7 @@ const educationData = [
             "Developed a carbon fiber origami crash box for a Formula Student car using FEA simulations (LS- Dyna), incorporating cohesive and shell elements.",
             "Conducted experimental testing to validate models, with comprehensive data post - processing in Matlab"
         ],
-        link: pdf
+        link: "https://webthesis.biblio.polito.it/27482/"
     },
     {
         id: 3,

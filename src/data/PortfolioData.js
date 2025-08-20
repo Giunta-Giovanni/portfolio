@@ -9,8 +9,8 @@ const portfolioData = [
         id: 1,
         image: mappa,
         tile: "International Experiences",
-        title: "Across all the studing period until now I travel around the world.",
-        abstract: "Germany; Netherland; UK; Croatia. Getting in touch with other culture and share experiences."
+        title: "Gained international experiences throught business travel",
+        abstract: "Cross cultural sharing and collaborations (Ex: Germany; Netherland; UK; Croatia)."
     },
     {
         id: 2,

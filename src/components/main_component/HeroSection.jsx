@@ -58,7 +58,10 @@ export default function HeroSection() {
                                     return (
                                         <div key={link.id} className="col">
                                             <div className={style.channel}>
-                                                <a href={link.link}>
+                                                <a 
+                                                href={link.link}                             
+                                                target="_blank"
+                                                rel="noopener noreferrer">
                                                     <img src={link.image} alt="" />
                                                 </a>
                                             </div>
@@ -81,7 +84,7 @@ export default function HeroSection() {
 
             {/* banner next section */}
             <div ref={sections.experience} className={style.banner_section}>
-                <h1 className={style.banner_title}>EXPERIENCE.</h1>
+                <h1 className={style.banner_title}>EXPERIENCE</h1>
             </div>
 
         </section >

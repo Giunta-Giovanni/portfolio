@@ -25,10 +25,10 @@ const expertiseData = [
         image: nttData,
         year: "2023 - 2025",
         title: "Advanced R&D System Engineer at NTT DATA Italy | Italdesign - Turin, Italy",
-        role: "Working on an Audi infotainment system focused on the navigation domain.",
+        role: "Working on Audi infotainment systems as navigation domain Function Owner.",
         tasks: [
-            "System specification and requirement management using IBM DOORS.",
-            "Technical documentation via Confluence and Jira.",
+            "Managed system requirement on IBM DOORS.",
+            "Tracked project issue using Jira with SCRUM Agile framework.",
             "Ensured compliance with TISAX data protection standards.",
             "Performed prototype vehicle test drives and bench testing.",
             "Analyzed CAN and Ethernet traces using CANoe and esoTrace.",
